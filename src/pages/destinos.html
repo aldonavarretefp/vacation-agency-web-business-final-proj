@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos - TravelWorld</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/destinos-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../../index.html" class="logo">Travel<span>World</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../pages/destinos.html">Destinos</a></li>
+                        <li><a href="../pages/paquetes.html">Paquetes</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Nuestros Destinos</h1>
+            <p>Descubre los lugares más increíbles del mundo</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="destination-filters">
+                <h3>Filtrar por:</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="playa">Playas</button>
+                    <button class="filter-btn" data-filter="ciudad">Ciudades</button>
+                    <button class="filter-btn" data-filter="montana">Montañas</button>
+                </div>
+            </div>
+
+            <div class="destinations-grid">
+                <div class="destination-card" id="cancun" data-category="playa">
+                    <img src="../images/cancun.jpg" alt="Cancún" class="destination-img">
+                    <div class="destination-content">
+                        <h3>Cancún, México</h3>
+                        <p>Disfruta de las playas de arena blanca y aguas cristalinas en el Caribe mexicano.</p>
+                        <div class="destination-info">
+                            <span><strong>Clima:</strong> Tropical</span>
+                            <span><strong>Mejor época:</strong> Dic - Abr</span>
+                            <span><strong>Duración recomendada:</strong> 7 días</span>
+                        </div>
+                        <a href="#" class="btn">Ver paquetes</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" id="paris" data-category="ciudad">
+                    <img src="../images/paris.jpeg" alt="París" class="destination-img">
+                    <div class="destination-content">
+                        <h3>París, Francia</h3>
+                        <p>La ciudad del amor te espera con su rica historia, arte y gastronomía.</p>
+                        <div class="destination-info">
+                            <span><strong>Clima:</strong> Templado</span>
+                            <span><strong>Mejor época:</strong> Abr - Jun</span>
+                            <span><strong>Duración recomendada:</strong> 5 días</span>
+                        </div>
+                        <a href="#" class="btn">Ver paquetes</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" id="tokyo" data-category="ciudad">
+                    <img src="../images/tokio.jpg" alt="Tokio" class="destination-img">
+                    <div class="destination-content">
+                        <h3>Tokio, Japón</h3>
+                        <p>Una mezcla perfecta de tradición y modernidad en la capital japonesa.</p>
+                        <div class="destination-info">
+                            <span><strong>Clima:</strong> Templado</span>
+                            <span><strong>Mejor época:</strong> Mar - May</span>
+                            <span><strong>Duración recomendada:</strong> 10 días</span>
+                        </div>
+                        <a href="#" class="btn">Ver paquetes</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="montana">
+                    <img src="../images/alpes.jpg" alt="Alpes Suizos" class="destination-img">
+                    <div class="destination-content">
+                        <h3>Alpes Suizos</h3>
+                        <p>Majestuosas montañas, lagos cristalinos y pueblos pintorescos.</p>
+                        <div class="destination-info">
+                            <span><strong>Clima:</strong> Alpino</span>
+                            <span><strong>Mejor época:</strong> Jun - Ago</span>
+                            <span><strong>Duración recomendada:</strong> 8 días</span>
+                        </div>
+                        <a href="#" class="btn">Ver paquetes</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="playa">
+                    <img src="../images/bali.webp" alt="Bali" class="destination-img">
+                    <div class="destination-content">
+                        <h3>Bali, Indonesia</h3>
+                        <p>Playas paradisíacas, templos ancestrales y una cultura fascinante.</p>
+                        <div class="destination-info">
+                            <span><strong>Clima:</strong> Tropical</span>
+                            <span><strong>Mejor época:</strong> May - Sep</span>
+                            <span><strong>Duración recomendada:</strong> 10 días</span>
+                        </div>
+                        <a href="#" class="btn">Ver paquetes</a>
+                    </div>
+                </div>
+
+                <div class="destination-card" data-category="ciudad">
+                    <img src="../images/newyork.jpg" alt="Nueva York" class="destination-img">
+                    <div class="destination-content">
+                        <h3>Nueva York, EE.UU.</h3>
+                        <p>La Gran Manzana, una ciudad que nunca duerme llena de atracciones.</p>
+                        <div class="destination-info">
+                            <span><strong>Clima:</strong> Continental</span>
+                            <span><strong>Mejor época:</strong> Sep - Nov</span>
+                            <span><strong>Duración recomendada:</strong> 7 días</span>
+                        </div>
+                        <a href="#" class="btn">Ver paquetes</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section destination-table-section">
+        <div class="container">
+            <h2 class="section-title">Comparativa de Destinos</h2>
+            <div class="table-responsive">
+                <table class="destination-table">
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Precio promedio</th>
+                            <th>Duración recomendada</th>
+                            <th>Mejor época</th>
+                            <th>Nivel de popularidad</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Cancún, México</td>
+                            <td>$1,200 USD</td>
+                            <td>7 días</td>
+                            <td>Diciembre - Abril</td>
+                            <td>Alto</td>
+                        </tr>
+                        <tr>
+                            <td>París, Francia</td>
+                            <td>$1,500 USD</td>
+                            <td>5 días</td>
+                            <td>Abril - Junio</td>
+                            <td>Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Tokio, Japón</td>
+                            <td>$2,000 USD</td>
+                            <td>10 días</td>
+                            <td>Marzo - Mayo</td>
+                            <td>Medio</td>
+                        </tr>
+                        <tr>
+                            <td>Alpes Suizos</td>
+                            <td>$1,800 USD</td>
+                            <td>8 días</td>
+                            <td>Junio - Agosto</td>
+                            <td>Medio</td>
+                        </tr>
+                        <tr>
+                            <td>Bali, Indonesia</td>
+                            <td>$1,300 USD</td>
+                            <td>10 días</td>
+                            <td>Mayo - Septiembre</td>
+                            <td>Alto</td>
+                        </tr>
+                        <tr>
+                            <td>Nueva York, EE.UU.</td>
+                            <td>$1,700 USD</td>
+                            <td>7 días</td>
+                            <td>Septiembre - Noviembre</td>
+                            <td>Alto</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TravelWorld</h3>
+                    <p>Tu agencia de viajes de confianza desde 2005.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../pages/destinos.html">Destinos</a></li>
+                        <li><a href="../pages/paquetes.html">Paquetes</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>Email: info@travelworld.com</li>
+                        <li>Teléfono: +123 456 7890</li>
+                        <li>Dirección: Av. Principal 123, Ciudad</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TravelWorld. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/js/script.js"></script>
+</body>
+</html>

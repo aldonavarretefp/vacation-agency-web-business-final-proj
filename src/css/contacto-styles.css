@@ -1,0 +1,154 @@
+/* Estilos específicos para la página de contacto */
+.page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/contact-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-info h2, .contact-form-container h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.contact-info p {
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.contact-details {
+    margin-bottom: 2rem;
+}
+
+.contact-item {
+    display: flex;
+    margin-bottom: 1.5rem;
+}
+
+.contact-item i {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 1rem;
+    min-width: 30px;
+}
+
+.contact-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--primary-color);
+}
+
+.social-contact h3 {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.social-icon:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.contact-form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.map-section {
+    background-color: #f9f9f9;
+}
+
+.map-container {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faq-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.faq-question {
+    background-color: white;
+    padding: 1.2rem;
+    cursor: pointer;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-icon {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.faq-answer {
+    padding: 0 1.2rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.faq-answer p {
+    padding: 1rem 0;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 200px;
+}
+
+.faq-item.active .faq-icon {
+    transform: rotate(45deg);
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}

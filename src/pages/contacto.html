@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - TravelWorld</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contacto-styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="../../index.html" class="logo">Travel<span>World</span></a>
+                <nav>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../pages/destinos.html">Destinos</a></li>
+                        <li><a href="../pages/paquetes.html">Paquetes</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h1>Contacto</h1>
+            <p>Estamos aquí para ayudarte a planificar tu próximo viaje</p>
+        </div>
+    </section>
+
+    <section class="section contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h2>Información de Contacto</h2>
+                    <p>No dudes en contactarnos para cualquier consulta sobre nuestros servicios o para comenzar a planificar tu próximo viaje.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="icon-location"></i>
+                            <div>
+                                <h3>Dirección</h3>
+                                <p>Av. Principal 123, Ciudad</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="icon-phone"></i>
+                            <div>
+                                <h3>Teléfono</h3>
+                                <p>+123 456 7890</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="icon-mail"></i>
+                            <div>
+                                <h3>Email</h3>
+                                <p>info@travelworld.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="icon-clock"></i>
+                            <div>
+                                <h3>Horario de Atención</h3>
+                                <p>Lunes a Viernes: 9:00 - 18:00<br>Sábados: 10:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Síguenos en Redes Sociales</h3>
+                        <div class="social-icons">
+                            <a href="https://facebook.com" target="_blank" class="social-icon">Facebook</a>
+                            <a href="https://instagram.com" target="_blank" class="social-icon">Instagram</a>
+                            <a href="https://twitter.com" target="_blank" class="social-icon">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <h2>Envíanos un Mensaje</h2>
+                    <form action="../script/php/procesar_contacto.php" method="post" class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto</label>
+                            <input type="text" id="asunto" name="asunto" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>Tipo de consulta</label>
+                            <div class="radio-group">
+                                <label>
+                                    <input type="radio" name="tipo_consulta" value="informacion" checked> Información general
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipo_consulta" value="reserva"> Reserva
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipo_consulta" value="reclamo"> Reclamo
+                                </label>
+                                <label>
+                                    <input type="radio" name="tipo_consulta" value="otro"> Otro
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="destino_interes">Destino de interés</label>
+                            <select id="destino_interes" name="destino_interes">
+                                <option value="">Selecciona un destino (opcional)</option>
+                                <option value="europa">Europa</option>
+                                <option value="asia">Asia</option>
+                                <option value="norteamerica">Norteamérica</option>
+                                <option value="sudamerica">Sudamérica</option>
+                                <option value="africa">África</option>
+                                <option value="oceania">Oceanía</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label>
+                                <input type="checkbox" name="suscripcion" value="si"> Deseo recibir ofertas y novedades por email
+                            </label>
+                        </div>
+                        
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block">Enviar mensaje</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section map-section">
+        <div class="container">
+            <h2 class="section-title">Nuestra Ubicación</h2>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.952912260219!2d-79.9009933857707!3d-2.1705686984132295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMsKwMTAnMTQuMSJTIDc5wrA1Myc1OS4yIlc!5e0!3m2!1ses!2sec!4v1625764840143!5m2!1ses!2sec" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="section faq-section">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Cómo puedo reservar un viaje?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Puedes reservar un viaje de varias formas: a través de nuestro formulario de contacto en esta página, llamándonos por teléfono, enviándonos un email o visitando nuestra oficina. Uno de nuestros asesores te guiará en todo el proceso.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Cuáles son las formas de pago aceptadas?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Aceptamos pagos con tarjetas de crédito y débito (Visa, MasterCard, American Express), transferencias bancarias y efectivo en nuestra oficina. Para reservas, generalmente solicitamos un depósito del 30% y el saldo restante puede pagarse hasta 30 días antes del viaje.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Ofrecen seguro de viaje?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, ofrecemos diferentes opciones de seguros de viaje que pueden incluirse en tu paquete. Recomendamos siempre viajar con un seguro que cubra emergencias médicas, cancelaciones y pérdida de equipaje.</p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        ¿Qué sucede si necesito cancelar mi viaje?
+                        <span class="faq-icon">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Nuestra política de cancelación varía según el tipo de paquete y la anticipación con la que se realice. En general, las cancelaciones con más de 60 días de anticipación tienen un reembolso del 90%, entre 30-60 días un 50%, y menos de 30 días podrían no tener reembolso. Te recomendamos contratar un seguro de cancelación.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>TravelWorld</h3>
+                    <p>Tu agencia de viajes de confianza desde 2005.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Enlaces rápidos</h3>
+                    <ul>
+                        <li><a href="../../index.html">Inicio</a></li>
+                        <li><a href="../pages/destinos.html">Destinos</a></li>
+                        <li><a href="../pages/paquetes.html">Paquetes</a></li>
+                        <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                        <li><a href="../pages/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul>
+                        <li>Email: info@travelworld.com</li>
+                        <li>Teléfono: +123 456 7890</li>
+                        <li>Dirección: Av. Principal 123, Ciudad</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Síguenos</h3>
+                    <ul class="social-links">
+                        <li><a href="https://facebook.com" target="_blank">Facebook</a></li>
+                        <li><a href="https://instagram.com" target="_blank">Instagram</a></li>
+                        <li><a href="https://twitter.com" target="_blank">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 TravelWorld. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../script/js/script.js"></script>
+</body>
+</html>

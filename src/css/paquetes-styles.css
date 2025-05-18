@@ -1,0 +1,158 @@
+/* Estilos específicos para la página de paquetes */
+.page-header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('img/packages-header.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.packages-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.package-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    position: relative;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+}
+
+.package-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.3rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    z-index: 1;
+}
+
+.package-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.package-content {
+    padding: 1.5rem;
+}
+
+.package-content h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.package-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.package-features {
+    list-style: none;
+    margin: 1rem 0;
+}
+
+.package-features li {
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.package-features li:before {
+    content: "✓";
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+}
+
+.package-price {
+    margin: 1.5rem 0;
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-right: 0.5rem;
+}
+
+.old-price {
+    font-size: 1.2rem;
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 0.5rem;
+}
+
+.per-person {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.btn-block {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilos para el formulario de reserva */
+.booking-section {
+    background-color: #f9f9f9;
+}
+
+.section-description {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.booking-form {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+    .packages-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
