@@ -7,6 +7,26 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/paquetes-styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .view-reservations-btn {
+            display: block;
+            margin: 30px auto 0;
+            background: #e74c3c;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 14px;
+            text-align: center;
+            max-width: 250px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .view-reservations-btn:hover {
+            background: #c0392b;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -206,6 +226,9 @@
                 <div class="form-group">
                     <button type="submit" class="btn btn-block">Enviar solicitud</button>
                 </div>
+
+                <!-- Botón para ver reservas añadido aquí -->
+                <a href="../script/php/reporte_reserva.php" class="view-reservations-btn">📊 Ver reservas realizadas</a>
             </form>
         </div>
     </section>
