@@ -1,5 +1,6 @@
 <?php
-<?php
+date_default_timezone_set('America/Mexico_City');
+
 // Configuración de la conexión a la base de datos
 $servername = "localhost";
 $username = "root";
