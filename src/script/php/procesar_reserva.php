@@ -1,9 +1,9 @@
 <?php
 // Configuración de la conexión a la base de datos
 $servername = "localhost";
-$username = "usuario_db";
-$password = "password_db";
-$dbname = "Eq13Travelworld";
+$username = "root";
+$password = "password";
+$dbname = "eq13Travelworld";
 
 // Crear conexión
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Ejecutar la consulta
     if ($stmt->execute()) {
         // Redirigir a una página de confirmación
-        header("Location: confirmacion.html");
+        header("Location: ../../html/confirmacion.html");
         exit();
     } else {
         echo "Error: " . $stmt->error;
