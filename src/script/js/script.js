@@ -5,9 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
     if (imagenDestino) {
         // Arreglo de imágenes para rotar
         const imagenes = [
-            '../../images/cancun',
-            '../../images/paris.jpg',
-            '../../images/tokyo.jpg'
+            './src/images/cancun.jpg',
+            './src/images/paris.jpeg',
+            './src/images/tokio.jpg'
         ];
         
         let indiceActual = 0;
